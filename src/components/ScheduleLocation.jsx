@@ -12,7 +12,7 @@ export default function ScheduleLocation() {
             className="w-full min-h-screen px-6 py-20 bg-white flex flex-col items-center justify-center"
         >
             <h2 className="text-4xl font-bold text-blue-700 drop-shadow-sm mb-12 text-center">
-                Atención
+                Atención al cliente
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
@@ -25,7 +25,10 @@ export default function ScheduleLocation() {
                         <tbody>
                             <tr className="border-b border-blue-200">
                                 <td className="py-3 font-medium">Lunes a Viernes</td>
-                                <td className="py-3 text-right">9:00 AM – 8:00 PM</td>
+                                <div className="flex flex-col">
+                                    <td className="text-right">7:00 AM – 11:00 AM</td>
+                                    <td className="text-right">2:00 PM – 6:00 PM</td>
+                                </div>
                             </tr>
                             <tr className="border-b border-blue-200">
                                 <td className="py-3 font-medium">Sábados</td>
