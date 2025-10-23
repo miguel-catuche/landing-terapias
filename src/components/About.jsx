@@ -20,7 +20,7 @@ export default function About() {
         <div
           className="relative w-full h-full bg-cover"
           style={{
-            backgroundImage: `url('src/assets/img1.jpg')`,
+            backgroundImage: `url('https://i.imgur.com/awI9NQN.jpeg')`,
             backgroundPosition: "10% center",
           }}
         >
