@@ -12,11 +12,11 @@ export default function Footer() {
             viewport={{ once: true }}
             className="w-full px-6 py-10 bg-gray-800 text-gray-300"
         >
-            <footer className="max-w-[90vw] max-h-[50vh] mx-auto">
+            <footer className="max-w-full max-h-[50vh] mx-auto">
                 {/* Sección superior */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-16 border-b border-gray-700 pb-10">
+                <div className="flex flex-col md:flex-row justify-around gap-8 max-w-[90vw] mx-auto border-b border-gray-700 pb-5">
                     {/* Institucional */}
-                    <div className="space-y-4">
+                    <div className="space-y-4 w-[20%]">
                         <h2 className="text-xl font-semibold text-white">Centro Terapéutico Integral 
                             <br /> María del Pilar Tamayo</h2>
                         <p className="text-sm leading-relaxed text-gray-400">
@@ -52,7 +52,7 @@ export default function Footer() {
                 </div>
 
                 {/* Sección inferior */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-6">
+                <div className="flex flex-col md:flex-row max-w-[80vw] mx-auto items-center justify-between gap-6 pt-6">
                     <p className="text-xs text-gray-500 text-center md:text-left">
                         © 2025 Centro Terapéutico Integral María del Pilar Tamayo. Todos los derechos reservados.
                     </p>
