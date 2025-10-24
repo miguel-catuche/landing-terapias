@@ -54,32 +54,39 @@ export default function Services() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="w-full min-h-screen px-6 py-20 bg-white flex flex-col items-center justify-center"
+      className="relative w-full min-h-screen px-6 py-20 bg-white flex flex-col items-center justify-center"
     >
-      <h2 className="text-4xl font-bold text-blue-700 drop-shadow-sm mb-12 text-center">
-        Nuestros Servicios
-      </h2>
+      {/* Fondo decorativo */}
+      <div className="absolute top-14 left-1/2 -translate-x-1/2 w-full h-[50vh] bg-blue-200 z-0" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl w-full">
-        {services.map((service, index) => (
-          <article
-            key={index}
-            className="overflow-hidden rounded-xl shadow-md transition hover:shadow-xl bg-white"
-          >
-            <img
-              alt={service.title}
-              src={service.image}
-              className="h-56 w-full object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-sm text-gray-600">{service.description}</p>
-            </div>
-          </article>
-        ))}
+      {/* Contenido principal */}
+      <div className="relative z-10 w-full flex flex-col items-center">
+        <h2 className="text-4xl font-bold text-blue-700 drop-shadow-sm mb-12 text-center">
+          Nuestros Servicios
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl w-full">
+          {services.map((service, index) => (
+            <article
+              key={index}
+              className="overflow-hidden rounded-xl shadow-md transition hover:shadow-xl bg-white"
+            >
+              <img
+                alt={service.title}
+                src={service.image}
+                className="h-56 w-full object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-600">{service.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </motion.section>
+
   );
 }
