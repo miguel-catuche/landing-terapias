@@ -11,7 +11,7 @@ export default function Header() {
     >
       <div className="max-w-[1200px] mx-auto px-4 h-[65px] flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <a href="#about">
+          <a href="#hero">
             <img
               src="https://i.imgur.com/wcJtcSC.png"
               alt="Logo Centro Terapéutico"

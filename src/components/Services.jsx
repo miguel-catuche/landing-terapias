@@ -80,7 +80,7 @@ export default function Services() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-600">{service.description}</p>
+                <p className="text-sm bg-red-300 text-gray-600">{service.description}</p>
               </div>
             </article>
           ))}

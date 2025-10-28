@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
     return (
 
-        <motion.section
+        <motion.footer
             id="footer"
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ export default function Footer() {
                     <div className="space-y-4 w-[20%]">
                         <h2 className="text-xl font-semibold text-white">Centro Terapéutico Integral 
                             <br /> María del Pilar Tamayo</h2>
-                        <p className="text-sm leading-relaxed text-gray-400">
+                        <p className="text-sm bg-red-200 leading-relaxed text-gray-900">
                             Espacio dedicado al bienestar físico y emocional. Atención personalizada con enfoque integral.
                         </p>
                     </div>
@@ -106,7 +106,7 @@ export default function Footer() {
 
                 </div>
             </footer>
-        </motion.section>
+        </motion.footer>
 
 
     )
