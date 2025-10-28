@@ -5,6 +5,7 @@ import ScheduleLocation from './components/ScheduleLocation'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
+import WhatsAppButton from './components/WhatsAppButton'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <ScheduleLocation/>
       <Contact/>
       <Footer/>
+      <WhatsAppButton/>
     </>
   )
 }

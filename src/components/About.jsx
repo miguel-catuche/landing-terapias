@@ -5,41 +5,49 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0, y: -40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative w-full min-h-screen bg-white flex items-center justify-center px-6 py-20 overflow-hidden"
     >
-      {/* Imagen de fondo con degradado vertical */}
-      <div
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{
-          backgroundImage: `url('https://i.imgur.com/awI9NQN.jpeg')`,
-        }}
-      >
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(30,58,138,0.3) 40%, rgba(30,58,138,0.85) 100%)",
-          }}
-        />
-      </div>
+      {/* Fondo azul al lado derecho (como en el ejemplo de Clio) */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-900 "></div>
 
-      {/* Tarjeta de contenido institucional */}
-      <div className="relative z-10 max-w-3xl w-full bg-white/90 backdrop-blur-md shadow-2xl rounded-xl border border-gray-200 p-10 space-y-6">
-        <h2 className="text-4xl font-bold text-[var(--color-primary)] text-center">
-          Sobre Nosotros
-        </h2>
+      <div className="relative max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
+        {/* Columna izquierda: texto institucional */}
+        <div className="space-y-6">
+          <span className="text-sm font-semibold text-blue-700 uppercase tracking-wide">
+            Sobre nosotros
+          </span>
+          <h2 className="text-4xl font-bold text-gray-900">
+            ¿Quiénes somos?
+          </h2>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Somos un <strong>Centro Terapéutico Integral</strong> ubicado en Palmira, Valle del Cauca, dedicado al bienestar físico y emocional de nuestros pacientes.
+            Desde el <strong>29 de marzo de 2007</strong>, ofrecemos atención profesional, personalizada y humana, enfocada en promover una recuperación efectiva y duradera.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Estamos <strong>habilitados oficialmente</strong> por el <strong>Ministerio de Salud y Protección Social</strong>, bajo el grupo de servicio 
+            <em> Apoyo Diagnóstico y Complementación Terapéutica</em>, modalidad <strong>739 - Fisioterapia</strong>. 
+            Nuestro <strong>Distintivo de Habilitación de Servicios</strong> es <strong>BHZZ0824782</strong>, garantizando el cumplimiento de los estándares de calidad exigidos para los servicios de salud en Colombia.
+          </p>
+        </div>
 
-        <p className="text-lg text-gray-800 leading-relaxed text-center">
-          Somos un <strong>centro de fisioterapia</strong> ubicado en Palmira, Valle del Cauca, comprometido con el bienestar físico y emocional de nuestros pacientes. Desde el <strong>29 de marzo de 2007</strong>, hemos brindado atención profesional y personalizada, guiados por un enfoque integral que combina experiencia clínica y sensibilidad humana.
-        </p>
-
-        <p className="text-lg text-gray-800 leading-relaxed text-center">
-          Estamos <strong>habilitados oficialmente</strong> por el <strong>Ministerio de Salud y Protección Social</strong> bajo el grupo de servicio <em>Apoyo Diagnóstico y Complementación Terapéutica</em>, en la modalidad <strong>739 - Fisioterapia</strong>. Nuestro distintivo único de habilitación es <strong>DHSS0134802</strong>, lo que garantiza que cumplimos con todos los estándares de calidad exigidos por la normativa nacional.
-        </p>
+        {/* Columna derecha: imagen con fondo azul lateral */}
+        <div className="relative flex justify-center">
+          <div className="relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="https://i.imgur.com/awI9NQN.jpeg"
+              alt="Centro Terapéutico Integral María Del Pilar Tamayo"
+              className="w-full h-full object-cover rounded-xl"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-blue-900/80 text-white text-sm p-3 text-center">
+              Distintivo de Habilitación de Servicios — Ministerio de Salud y Protección Social — 
+              Grupo 739 Fisioterapia — Código BHZZ0824782
+            </div>
+          </div>
+        </div>
       </div>
     </motion.section>
   )

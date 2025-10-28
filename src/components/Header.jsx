@@ -28,16 +28,6 @@ export default function Header() {
           <a href="#schedule" className="text-gray-700 hover:text-blue-500">Atención</a>
           <a href="#contact" className="text-gray-700 hover:text-blue-500">Contacto</a>
         </nav>
-        <div>
-          <a
-            href="https://api.whatsapp.com/send?phone=573137169950&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-4 py-2 rounded-md bg-blue-500 text-white font-medium hover:bg-blue-600 hover:text-white transition-colors"
-          >
-            Contáctanos
-          </a>
-        </div>
       </div>
     </motion.header>
 
