@@ -9,25 +9,25 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full min-h-screen bg-white flex items-center justify-center px-6 py-20 overflow-hidden"
+      className="relative w-full min-h-screen bg-[--color-bg] flex items-center justify-center px-6 py-20 overflow-hidden"
     >
       {/* Fondo azul al lado derecho (como en el ejemplo de Clio) */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-900 "></div>
+      <div className="bg-lateral-about"></div>
 
       <div className="relative max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
         {/* Columna izquierda: texto institucional */}
         <div className="space-y-6">
-          <span className="text-sm font-semibold text-blue-700 uppercase tracking-wide">
+          <span className="text-sm font-semibold text-[--color-primary-title] uppercase tracking-wide">
             Sobre nosotros
           </span>
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="text-4xl font-bold text-[--color-text]">
             ¿Quiénes somos?
           </h2>
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-lg leading-relaxed text-[--color-text]">
             Somos un <strong>Centro Terapéutico Integral</strong> ubicado en Palmira, Valle del Cauca, dedicado al bienestar físico y emocional de nuestros pacientes.
             Desde el <strong>29 de marzo de 2007</strong>, ofrecemos atención profesional, personalizada y humana, enfocada en promover una recuperación efectiva y duradera.
           </p>
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-lg leading-relaxed text-[--color-text]">
             Estamos <strong>habilitados oficialmente</strong> por el <strong>Ministerio de Salud y Protección Social</strong>, bajo el grupo de servicio 
             <em> Apoyo Diagnóstico y Complementación Terapéutica</em>, modalidad <strong>739 - Fisioterapia</strong>. 
             Nuestro <strong>Distintivo de Habilitación de Servicios</strong> es <strong>BHZZ0824782</strong>, garantizando el cumplimiento de los estándares de calidad exigidos para los servicios de salud en Colombia.
@@ -42,7 +42,7 @@ export default function About() {
               alt="Centro Terapéutico Integral María Del Pilar Tamayo"
               className="w-full h-full object-cover rounded-xl"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-blue-900/80 text-white text-sm p-3 text-center">
+            <div className="caption-about">
               Distintivo de Habilitación de Servicios — Ministerio de Salud y Protección Social — 
               Grupo 739 Fisioterapia — Código BHZZ0824782
             </div>

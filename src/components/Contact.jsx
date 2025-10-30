@@ -3,21 +3,18 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
     return (
-
         <motion.section
             id="contact"
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="relative w-full min-h-[100vh] px-6 pt-20 pb-0 bg-white"
+            className="relative w-full min-h-[100vh] px-6 pt-20 pb-0 bg-[--color-bg]"
         >
-            {/* Fondo decorativo institucional */}
-            <div className="absolute top-14 left-1/2 -translate-x-1/2 w-full h-[50vh] bg-blue-200 z-0" />
 
             {/* Contenido principal */}
             <div className="relative z-10 max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold text-blue-700 drop-shadow-sm mb-12 text-center">
+                <h2 className="text-4xl font-bold text-[--color-primary-title] drop-shadow-sm mb-12 text-center">
                     Contáctanos
                 </h2>
 
@@ -26,42 +23,41 @@ export default function Contact() {
                     <div className="bg-white rounded-xl shadow-md p-8 w-full max-w-md space-y-8">
                         {/* Teléfono */}
                         <div className="flex items-start gap-4">
-                            <div className="bg-blue-100 p-3 rounded-full text-blue-600">
+                            <div className="bg-[--color-bg-icon] p-3 rounded-full text-[--color-subtext]">
                                 <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 className="text-xl font-semibold text-blue-800 mb-1">Teléfono</h3>
-                                <p className="text-gray-700 text-base mb-2">
+                                <h3 className="text-xl font-semibold text-[--color-subtext] mb-1">Teléfono</h3>
+                                <p className="text-[--color-text] text-base mb-2">
                                     ¿Necesitas orientación o quieres agendar una cita? Comunícate con nosotros directamente y con gusto te atenderemos.
                                 </p>
-                                <p className="text-lg font-medium text-blue-700">+57 3137169950</p>
+                                <p className="text-lg font-medium text-[--color-subtext]">+57 3137169950</p>
                             </div>
                         </div>
 
                         {/* Correo */}
                         <div className="flex items-start gap-4">
-                            <div className="bg-blue-100 p-3 rounded-full text-blue-600">
+                            <div className="bg-[--color-bg-icon] p-3 rounded-full text-[--color-subtext]">
                                 <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                                     <rect x="2" y="4" width="20" height="16" rx="2" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 className="text-xl font-semibold text-blue-800 mb-1">Correo Electrónico</h3>
-                                <p className="text-gray-700 text-base mb-2">
+                                <h3 className="text-xl font-semibold text-[--color-subtext] mb-1">Correo Electrónico</h3>
+                                <p className="text-[--color-text] text-base mb-2">
                                     Escríbenos si tienes dudas, necesitas información o deseas coordinar servicios. Estamos para ayudarte.
                                 </p>
-                                <p className="text-lg font-medium text-blue-700">mapilartamayog@hotmail.es</p>
+                                <p className="text-lg font-medium text-[--color-subtext]">mapilartamayog@hotmail.es</p>
                             </div>
                         </div>
                     </div>
-
                     {/* Redes Sociales */}
                     <div className="bg-white rounded-xl shadow-md p-8 w-full max-w-md text-center">
-                        <h3 className="text-2xl font-bold text-blue-700 mb-4">Síguenos en redes</h3>
-                        <p className="text-gray-700 mb-6">
+                        <h3 className="text-2xl font-bold text-[--color-subtext] mb-4">Síguenos en redes</h3>
+                        <p className="text[--color-text] mb-6">
                             Mantente al tanto de nuestras actividades y novedades institucionales.
                         </p>
                         <div className="flex items-center justify-center gap-6">

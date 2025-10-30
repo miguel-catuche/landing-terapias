@@ -2,70 +2,65 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
-    return (
-        <motion.section
-            id="hero"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="relative w-full min-h-screen flex items-center justify-center overflow-hidden"
+  return (
+    <motion.section
+      id="hero"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Fondo con imagen y degradado vertical */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{
+          backgroundImage: `url('https://i.imgur.com/awI9NQN.jpeg')`,
+        }}
+      >
+        <div
+          className="bg-hero-gradient"
+        />
+      </div>
+
+      {/* Contenido principal centrado */}
+      <div className="relative z-10 w-full max-w-[900px] px-6 pt-32 text-center text-[--color-primary-hero] space-y-8">
+        <h2 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
+          Centro Terapéutico Integral <br /> María Del Pilar Tamayo
+        </h2>
+
+        <p className="text-xl md:text-2xl italic font-light text-[--color-sub-hero] max-w-2xl mx-auto">
+          “Cada sesión, un paso hacia tu mejor versión.”
+        </p>
+
+        <a
+          href="https://api.whatsapp.com/send?phone=573137169950&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-10 py-4 rounded-lg bg-[--color-bg-button] text-[--color-text-button] font-semibold text-lg shadow-lg hover:shadow-2xl hover:bg-[--color-bghover-button] hover:text-[--color-texthover-button] hover:scale-105 transition-all duration-300"
         >
-            {/* Fondo con imagen y degradado vertical */}
-            <div
-                className="absolute inset-0 bg-cover bg-center z-0"
-                style={{
-                    backgroundImage: `url('https://i.imgur.com/awI9NQN.jpeg')`,
-                }}
-            >
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        background:
-                            "linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(30,58,138,0.3) 40%, rgba(30,58,138,0.8) 100%)",
-                    }}
-                />
-            </div>
+          Contáctanos
+        </a>
 
-            {/* Contenido principal centrado */}
-            <div className="relative z-10 w-full max-w-[900px] px-6 pt-32 text-center text-white space-y-8">
-                <h2 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
-                    Centro Terapéutico Integral <br /> María Del Pilar Tamayo
-                </h2>
-
-                <p className="text-xl md:text-2xl italic font-light text-blue-100 max-w-2xl mx-auto">
-                    “Cada sesión, un paso hacia tu mejor versión.”
-                </p>
-
-                <a
-                    href="https://api.whatsapp.com/send?phone=573137169950&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-10 py-4 rounded-lg bg-white text-blue-700 font-semibold text-lg shadow-lg hover:shadow-2xl hover:bg-blue-100 hover:text-blue-800 hover:scale-105 transition-all duration-300"
-                >
-                    Contáctanos
-                </a>
-
-                {/* Distintivo institucional estilo glass */}
-                <div className="mx-auto mt-6 w-full max-w-[475px] bg-white/20 backdrop-blur-md border border-white/20 rounded-xl shadow-lg px-6 py-4 flex items-center justify-between gap-4 text-white">
-
-                    {/* Logo institucional */}
-                    <div className="flex-shrink-0 pr-4 border-r border-white/30">
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo_del_Ministerio_de_Salud_de_Colombia_%282022-2026%29.png"
-                            alt="Logo Ministerio de Salud"
-                            className="h-10 w-auto object-contain"
-                        />
-                    </div>
-                    {/* Texto institucional */}
-                    <div className="flex-1">
-                        <p className="text-sm leading-relaxed">
-                            Distintivo de Habilitación de Servicios otorgado por el Ministerio de Salud y Protección Social.<br /> 
-                            Apoyo Diagnóstico y Complementación Terapéutica.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </motion.section>
-    );
+        {/* Distintivo institucional estilo glass */}
+        <div className="mx-auto mt-6 w-full max-w-[475px] bg-white/20 backdrop-blur-md border border-[--color-glass-border] rounded-xl shadow-lg px-6 py-4 flex items-center justify-between gap-4 text-[--color-primary-hero]">
+          {/* Logo institucional */}
+          <div className="flex-shrink-0 pr-4 border-r border-[--color-glass-divider]">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo_del_Ministerio_de_Salud_de_Colombia_%282022-2026%29.png"
+              alt="Logo Ministerio de Salud"
+              className="h-10 w-auto object-contain"
+            />
+          </div>
+          {/* Texto institucional */}
+          <div className="flex-1">
+            <p className="text-sm leading-relaxed">
+              Distintivo de Habilitación de Servicios otorgado por el Ministerio de Salud y Protección Social.<br />
+              Apoyo Diagnóstico y Complementación Terapéutica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </motion.section>
+  );
 }

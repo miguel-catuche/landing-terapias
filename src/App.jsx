@@ -6,12 +6,14 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import WhatsAppButton from './components/WhatsAppButton'
+import ThemeSelector from './components/ThemeSelector'
 import './App.css'
 
 function App() {
   return (
     <>
       <Header/>
+      <ThemeSelector />
       <HeroSection/>
       <About/>
       <Services/>
