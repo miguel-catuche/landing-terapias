@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
     return (
-
         <motion.footer
             id="footer"
             initial={{ opacity: 0, y: -100 }}
@@ -12,21 +11,23 @@ export default function Footer() {
             viewport={{ once: true }}
             className="w-full px-6 py-10 bg-gray-800 text-gray-300"
         >
-            <footer className="max-w-full max-h-[50vh] mx-auto">
+            <footer className="max-w-[1200px] mx-auto">
                 {/* Sección superior */}
-                <div className="flex flex-col md:flex-row justify-around gap-8 max-w-[90vw] mx-auto border-b border-gray-700 pb-5">
+                <div className="flex flex-col md:flex-row justify-between gap-10 border-b border-gray-700 pb-8">
                     {/* Institucional */}
-                    <div className="space-y-4 w-[20%]">
-                        <h2 className="text-xl font-semibold text-white">Centro Terapéutico Integral 
-                            <br /> María del Pilar Tamayo</h2>
-                        <p className="text-sm bg-red-200 leading-relaxed text-gray-900">
+                    <div className="space-y-3 w-full md:w-1/3 text-center md:text-left">
+                        <h2 className="text-lg sm:text-xl font-semibold text-white leading-tight">
+                            Centro Terapéutico Integral <br />
+                            María del Pilar Tamayo
+                        </h2>
+                        <p className="text-sm leading-relaxed text-gray-400">
                             Espacio dedicado al bienestar físico y emocional. Atención personalizada con enfoque integral.
                         </p>
                     </div>
 
                     {/* Contacto */}
-                    <div className="space-y-4">
-                        <h2 className="text-xl font-semibold text-white">Contacto</h2>
+                    <div className="space-y-3 w-full md:w-1/3 text-center md:text-left">
+                        <h2 className="text-lg sm:text-xl font-semibold text-white">Contacto</h2>
                         <div>
                             <h3 className="text-sm font-medium text-blue-300">Teléfono</h3>
                             <p className="text-sm text-gray-400">+57 3137169950</p>
@@ -37,27 +38,39 @@ export default function Footer() {
                         </div>
                     </div>
 
+
                     {/* Servicios */}
-                    <div className="space-y-4">
-                        <h2 className="text-xl font-semibold text-white">Servicios</h2>
-                        <ul className="text-sm text-gray-400 space-y-1 list-disc list-inside">
+                    <div className="space-y-3 w-full md:w-1/3 text-center md:text-left">
+                        <h2 className="text-lg sm:text-xl font-semibold text-white">Servicios</h2>
+                        <ul className="text-sm text-left text-gray-400 space-y-1 list-disc list-inside inline-block md:block">
                             <li>Terapia Física</li>
-                            <li>Terapia vestibular</li>
+                            <li>Terapia Vestibular</li>
                             <li>Terapia Respiratoria</li>
-                            <li>Terapia de piso pélvico</li>
+                            <li>Terapia de Piso Pélvico</li>
                             <li>Drenaje Linfático Manual</li>
                             <li>Acondicionamiento Físico</li>
                         </ul>
                     </div>
+
+                    {/* Distinción Ministerio de Salud */}
+                    <div className="mt-8 pt-6 border-t border-gray-700 text-center">
+                        <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                            El <span className="text-gray-200 font-medium">Centro Terapéutico Integral María del Pilar Tamayo </span>
+                            se encuentra <span className="text-gray-200 font-medium">debidamente autorizado por el
+                                Ministerio de Salud y Protección Social de Colombia</span> para ejercer el servicio de
+                            fisioterapia y demás terapias afines en cumplimiento de las normas vigentes.
+                        </p>
+                    </div>
+
                 </div>
 
                 {/* Sección inferior */}
-                <div className="flex flex-col md:flex-row max-w-[80vw] mx-auto items-center justify-between gap-6 pt-6">
-                    <p className="text-xs text-gray-500 text-center md:text-left">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-6 text-center md:text-left">
+                    <p className="text-xs text-gray-500">
                         © 2025 Centro Terapéutico Integral María del Pilar Tamayo. Todos los derechos reservados.
                     </p>
 
-                    <div className="flex gap-6">
+                    <div className="flex gap-6 justify-center md:justify-end">
                         <a
                             href="https://m.facebook.com/itcpalmira/"
                             target="_blank"
@@ -101,13 +114,9 @@ export default function Footer() {
                                 />
                             </svg>
                         </a>
-
                     </div>
-
                 </div>
             </footer>
         </motion.footer>
-
-
-    )
+    );
 }

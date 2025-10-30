@@ -24,8 +24,8 @@ export default function HeroSection() {
       </div>
 
       {/* Contenido principal centrado */}
-      <div className="relative z-10 w-full max-w-[900px] px-6 pt-32 text-center text-[--color-primary-hero] space-y-8">
-        <h2 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
+      <div className="relative z-10 w-full max-w-[900px] px-6 md:pt-32 pt-10 md:pb-0 pb-10 text-center text-[--color-primary-hero] space-y-8">
+        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
           Centro Terapéutico Integral <br /> María Del Pilar Tamayo
         </h2>
 
@@ -43,23 +43,25 @@ export default function HeroSection() {
         </a>
 
         {/* Distintivo institucional estilo glass */}
-        <div className="mx-auto mt-6 w-full max-w-[475px] bg-white/20 backdrop-blur-md border border-[--color-glass-border] rounded-xl shadow-lg px-6 py-4 flex items-center justify-between gap-4 text-[--color-primary-hero]">
+        <div className="mx-auto mt-6 w-full max-w-[475px] bg-white/20 backdrop-blur-md border border-[--color-glass-border] rounded-xl shadow-lg px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3 sm:gap-4 text-[--color-primary-hero]">
           {/* Logo institucional */}
-          <div className="flex-shrink-0 pr-4 border-r border-[--color-glass-divider]">
+          <div className="flex-shrink-0 pr-3 sm:pr-4 border-r border-[--color-glass-divider]">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo_del_Ministerio_de_Salud_de_Colombia_%282022-2026%29.png"
               alt="Logo Ministerio de Salud"
-              className="h-10 w-auto object-contain"
+              className="h-8 w-auto sm:h-10 object-contain"
             />
           </div>
+
           {/* Texto institucional */}
           <div className="flex-1">
-            <p className="text-sm leading-relaxed">
+            <p className="text-xs sm:text-sm leading-relaxed">
               Distintivo de Habilitación de Servicios otorgado por el Ministerio de Salud y Protección Social.<br />
               Apoyo Diagnóstico y Complementación Terapéutica.
             </p>
           </div>
         </div>
+
       </div>
     </motion.section>
   );

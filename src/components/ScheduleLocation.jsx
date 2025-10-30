@@ -9,7 +9,7 @@ export default function ScheduleLocation() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full min-h-screen px-6 py-20 bg-[--color-bg] flex flex-col items-center justify-center"
+      className="relative w-full min-h-screen px-6 py-10 md:pt-20 bg-[--color-bg] flex flex-col items-center justify-center"
     >
 
       {/* Contenido principal */}
@@ -20,7 +20,7 @@ export default function ScheduleLocation() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
           {/* Tabla de horarios */}
-          <div className="w-full bg-white rounded-xl shadow-md p-6">
+          <div className="w-full bg-white rounded-xl shadow-md p-6 border border-solid border-gray-100">
             <h3 className="text-2xl font-semibold text-[--color-subtext] mb-6 text-center">
               Horarios de Atención
             </h3>
@@ -29,7 +29,7 @@ export default function ScheduleLocation() {
                 <tr className="border-b border-blue-200">
                   <td className="py-3 font-medium">Lunes a Viernes</td>
                   <td className="py-3 text-right">
-                    <div className="flex flex-col items-end">
+                    <div className="flex flex-col items-end md:text-base text-sm">
                       <span>7:00 AM – 11:00 AM</span>
                       <span>2:00 PM – 6:00 PM</span>
                     </div>
@@ -48,7 +48,7 @@ export default function ScheduleLocation() {
           </div>
 
           {/* Ubicación en Google Maps con dirección institucional */}
-          <div className="w-full rounded-xl shadow-md bg-white p-6 space-y-4">
+          <div className="w-full rounded-xl shadow-md bg-white p-6 space-y-4 border border-solid border-gray-100">
             <div className="text-center">
               <h3 className="text-2xl font-semibold text-[--color-subtext] mb-2">
                 Ubicación

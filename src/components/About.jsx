@@ -9,10 +9,10 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full min-h-screen bg-[--color-bg] flex items-center justify-center px-6 py-20 overflow-hidden"
+      className="relative w-full min-h-screen bg-[--color-bg] flex items-center justify-center px-6 py-10 md:py-20 overflow-hidden"
     >
       {/* Fondo azul al lado derecho (como en el ejemplo de Clio) */}
-      <div className="bg-lateral-about"></div>
+      <div className="hidden md:block bg-lateral-about"></div>
 
       <div className="relative max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
         {/* Columna izquierda: texto institucional */}

@@ -9,7 +9,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="relative w-full min-h-[100vh] px-6 pt-20 pb-0 bg-[--color-bg]"
+            className="relative w-full min-h-[100vh] px-6 md:pt-20 pt-10 pb-10 bg-[--color-bg]"
         >
 
             {/* Contenido principal */}
@@ -20,42 +20,43 @@ export default function Contact() {
 
                 <div className="flex flex-wrap justify-center gap-8">
                     {/* Tarjeta unificada: Teléfono + Correo */}
-                    <div className="bg-white rounded-xl shadow-md p-8 w-full max-w-md space-y-8">
+                    <div className="bg-white rounded-xl shadow-md md:p-8 p-5 max-[350px]:p-4 w-full max-w-md space-y-8 max-[350px]:space-y-6 overflow-hidden">
+
                         {/* Teléfono */}
-                        <div className="flex items-start gap-4">
-                            <div className="bg-[--color-bg-icon] p-3 rounded-full text-[--color-subtext]">
-                                <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <div className="flex items-start gap-4 max-[350px]:gap-2">
+                            <div className="bg-[--color-bg-icon] p-3 max-[350px]:p-2 rounded-full text-[--color-subtext] flex-shrink-0">
+                                <svg className="h-6 w-6 max-[350px]:h-5 max-[350px]:w-5" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
                                 </svg>
                             </div>
-                            <div>
-                                <h3 className="text-xl font-semibold text-[--color-subtext] mb-1">Teléfono</h3>
-                                <p className="text-[--color-text] text-base mb-2">
-                                    ¿Necesitas orientación o quieres agendar una cita? Comunícate con nosotros directamente y con gusto te atenderemos.
+                            <div className="min-w-0">
+                                <h3 className="text-lg max-[350px]:text-base font-semibold text-[--color-subtext] mb-1">Teléfono</h3>
+                                <p className="text-[--color-text] text-base max-[350px]:text-sm mb-2">
+                                    ¿Necesitas orientación o quieres agendar una cita? Comunícate con nosotros directamente.
                                 </p>
-                                <p className="text-lg font-medium text-[--color-subtext]">+57 3137169950</p>
+                                <p className="text-base max-[350px]:text-sm font-medium text-[--color-subtext] break-words">+57 3137169950</p>
                             </div>
                         </div>
 
                         {/* Correo */}
-                        <div className="flex items-start gap-4">
-                            <div className="bg-[--color-bg-icon] p-3 rounded-full text-[--color-subtext]">
-                                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <div className="flex items-start gap-4 max-[350px]:gap-2">
+                            <div className="bg-[--color-bg-icon] p-3 max-[350px]:p-2 rounded-full text-[--color-subtext] flex-shrink-0">
+                                <svg className="h-6 w-6 max-[350px]:h-5 max-[350px]:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                                     <rect x="2" y="4" width="20" height="16" rx="2" />
                                 </svg>
                             </div>
-                            <div>
-                                <h3 className="text-xl font-semibold text-[--color-subtext] mb-1">Correo Electrónico</h3>
-                                <p className="text-[--color-text] text-base mb-2">
-                                    Escríbenos si tienes dudas, necesitas información o deseas coordinar servicios. Estamos para ayudarte.
+                            <div className="min-w-0">
+                                <h3 className="text-lg max-[350px]:text-base font-semibold text-[--color-subtext] mb-1">Correo Electrónico</h3>
+                                <p className="text-[--color-text] text-base max-[350px]:text-sm mb-2">
+                                    Escríbenos si tienes dudas o deseas coordinar servicios.
                                 </p>
-                                <p className="text-lg font-medium text-[--color-subtext]">mapilartamayog@hotmail.es</p>
+                                <p className="text-base max-[350px]:text-sm font-medium text-[--color-subtext] break-words">mapilartamayog@hotmail.es</p>
                             </div>
                         </div>
                     </div>
                     {/* Redes Sociales */}
-                    <div className="bg-white rounded-xl shadow-md p-8 w-full max-w-md text-center">
+                    <div className="bg-white rounded-xl shadow-md md:p-8 p-6 w-full max-w-md text-center">
                         <h3 className="text-2xl font-bold text-[--color-subtext] mb-4">Síguenos en redes</h3>
                         <p className="text[--color-text] mb-6">
                             Mantente al tanto de nuestras actividades y novedades institucionales.

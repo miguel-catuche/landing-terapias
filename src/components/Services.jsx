@@ -54,7 +54,7 @@ export default function Services() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full min-h-screen px-6 py-20 bg-[--color-bg] flex flex-col items-center justify-center"
+      className="relative w-full min-h-screen px-6 py-10 md:pt-20 bg-[--color-bg] flex flex-col items-center justify-center"
     >
 
       {/* Contenido principal */}

@@ -1,4 +1,4 @@
-import Header from './components/header'
+import Header from './components/Header'
 import About from './components/About'
 import Services from './components/Services'
 import ScheduleLocation from './components/ScheduleLocation'
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header/>
-      <ThemeSelector />
+      <ThemeSelector/>
       <HeroSection/>
       <About/>
       <Services/>

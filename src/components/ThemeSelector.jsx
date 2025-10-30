@@ -42,7 +42,7 @@ export default function ThemeSelector() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 bg-[--color-bg-header] shadow-xl rounded-xl p-4 z-50 border border-[--color-glass-border] backdrop-blur-md transition-all duration-500">
+    <div className="fixed bottom-4 right-4 bg-[--color-bg-header] shadow-xl rounded-xl p-4 z-50 border border-[--color-glass-border] backdrop-blur-md transition-all duration-500 max-w-[90vw] overflow-hidden">
       <label
         htmlFor="theme"
         className="block text-sm font-semibold mb-2 text-[--color-text]"
@@ -54,8 +54,9 @@ export default function ThemeSelector() {
         id="theme"
         value={currentTheme}
         onChange={handleChange}
-        className="w-full p-2 rounded-md border text-[--color-text] bg-[--color-bg] border-[--color-glass-border] focus:ring-2 focus:ring-[--color-primary] outline-none transition"
+        className="w-full max-w-full p-2 rounded-md border text-[--color-text] bg-[--color-bg] border-[--color-glass-border] focus:ring-2 focus:ring-[--color-primary] outline-none transition"
       >
+
         {themes.map((theme) => (
           <option key={theme.id} value={theme.id}>
             {theme.label}
