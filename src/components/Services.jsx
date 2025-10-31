@@ -4,45 +4,39 @@ import { motion } from "framer-motion";
 const services = [
   {
     title: "Terapia Física",
-    image:
-      "https://hospitalangeles.com/assets/img/imgservicios/terapia-fisica-y-rehabilitacion.webp",
-    description:
-      "Recuperación funcional y movilidad con enfoque personalizado.",
+    image: "https://res.cloudinary.com/dkmlivs50/image/upload/v1761868778/t_fisica_vejxxz.jpg",
+    description: "Recuperación funcional y movilidad con enfoque personalizado.",
+    objectPosition: "50% 40%",
   },
   {
-    title: "Terapia vestibular",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu6bPsjzd-6gfMwd37w6k4Jpxpz4cXilVgoA&s",
-    description:
-      "Tratamiento para mareo, vértigo y equilibrio corporal.",
+    title: "Terapia Vestibular",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu6bPsjzd-6gfMwd37w6k4Jpxpz4cXilVgoA&s",
+    description: "Tratamiento para mareo, vértigo y equilibrio corporal.",
+    objectPosition: "50% 40%",
   },
   {
     title: "Terapia Respiratoria",
-    image:
-      "https://www.respiravital.com/wp-content/uploads/2024/11/terapia-respiratoria-en-ninos.png",
-    description:
-      "Mejoramos la función pulmonar y la capacidad respiratoria.",
+    image: "https://www.respiravital.com/wp-content/uploads/2024/11/terapia-respiratoria-en-ninos.png",
+    description: "Mejoramos la función pulmonar y la capacidad respiratoria.",
+    objectPosition: "50% 40%",
   },
   {
     title: "Terapia de piso pélvico",
-    image:
-      "https://staticnew-prod.topdoctors.com.co/article/13036/image/large/fisioterapia-del-piso-pelvico-1693590507-1693591334.png",
-    description:
-      "Fortalecimiento y rehabilitación del suelo pélvico.",
+    image: "https://res.cloudinary.com/dkmlivs50/image/upload/v1761868778/t_pisop_p6mytj.jpg",
+    description: "Fortalecimiento y rehabilitación del suelo pélvico.",
+    objectPosition: "50% 50%",
   },
   {
     title: "Drenaje Linfático Manual",
-    image:
-      "https://cuidateplus.marca.com/sites/default/files/styles/ratio_43/public/cms/2024-04/drenaje-linfatico.jpg.webp?itok=5eGouQxL",
-    description:
-      "Estimulación del sistema linfático para reducir inflamación.",
+    image: "https://cuidateplus.marca.com/sites/default/files/styles/ratio_43/public/cms/2024-04/drenaje-linfatico.jpg.webp?itok=5eGouQxL",
+    description: "Estimulación del sistema linfático para reducir inflamación.",
+    objectPosition: "50% 40%",
   },
   {
     title: "Acondicionamiento Físico",
-    image:
-      "https://s1.significados.com/foto/acondicionamiento-fisico-og.jpg",
-    description:
-      "Programas personalizados para mejorar fuerza y resistencia.",
+    image: "https://s1.significados.com/foto/acondicionamiento-fisico-og.jpg",
+    description: "Programas personalizados para mejorar fuerza y resistencia.",
+    objectPosition: "50% 40%",
   },
 ];
 
@@ -56,8 +50,6 @@ export default function Services() {
       viewport={{ once: true }}
       className="relative w-full min-h-screen px-6 py-10 md:pt-20 bg-[--color-bg] flex flex-col items-center justify-center"
     >
-
-      {/* Contenido principal */}
       <div className="relative z-10 w-full flex flex-col items-center">
         <h2 className="text-4xl font-bold text-[--color-primary-title] drop-shadow-sm mb-12 text-center">
           Nuestros Servicios
@@ -73,6 +65,7 @@ export default function Services() {
                 alt={service.title}
                 src={service.image}
                 className="h-56 w-full object-cover"
+                style={{ objectPosition: service.objectPosition }}
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-[--color-text] mb-2">

@@ -25,7 +25,7 @@ export default function About() {
           </h2>
           <p className="text-lg leading-relaxed text-[--color-text]">
             Somos un <strong>Centro Terapéutico Integral</strong> ubicado en Palmira, Valle del Cauca, dedicado al bienestar físico y emocional de nuestros pacientes.
-            Desde el <strong>29 de marzo de 2007</strong>, ofrecemos atención profesional, personalizada y humana, enfocada en promover una recuperación efectiva y duradera.
+            Desde el <strong>1 de Agosto de 1997</strong>, ofrecemos atención profesional, personalizada y humana, enfocada en promover una recuperación efectiva y duradera.
           </p>
           <p className="text-lg leading-relaxed text-[--color-text]">
             Estamos <strong>habilitados oficialmente</strong> por el <strong>Ministerio de Salud y Protección Social</strong>, bajo el grupo de servicio 
@@ -44,7 +44,7 @@ export default function About() {
             />
             <div className="caption-about">
               Distintivo de Habilitación de Servicios — Ministerio de Salud y Protección Social — 
-              Grupo 739 Fisioterapia — Código BHZZ0824782
+              Grupo 739 Fisioterapia — Código DHSS0134802
             </div>
           </div>
         </div>

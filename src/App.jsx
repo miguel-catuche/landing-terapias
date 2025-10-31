@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import WhatsAppButton from './components/WhatsAppButton'
 import ThemeSelector from './components/ThemeSelector'
+import FacilitySection from './components/FacilitySection'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <About/>
       <Services/>
       <ScheduleLocation/>
+      <FacilitySection/>
       <Contact/>
       <Footer/>
       <WhatsAppButton/>

@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a href="#hero">
             <img
-              src="https://i.imgur.com/wcJtcSC.png"
+              src="https://res.cloudinary.com/dkmlivs50/image/upload/v1761868863/logofondo_pspjwu.png"
               alt="Logo Centro Terapéutico"
               className="h-12 sm:h-10 w-auto transition-all duration-300"
             />

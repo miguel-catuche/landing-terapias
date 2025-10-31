@@ -56,7 +56,7 @@ export default function Footer() {
                     <div className="w-full md:w-1/4 text-center md:text-left 
                 border-t border-gray-700 md:border-0 rounded-none md:pt-0 pt-4 transition-colors duration-300">
                         <p className="text-xs text-gray-400 leading-relaxed">
-                            El <span className="text-gray-200 font-medium">Centro Terapéutico Integral María del Pilar Tamayo</span>
+                            El <span className="text-gray-200 font-medium">Centro Terapéutico Integral María del Pilar Tamayo </span>
                             se encuentra <span className="text-gray-200 font-medium">debidamente autorizado por el
                                 Ministerio de Salud y Protección Social de Colombia</span> para ejercer el servicio de
                             fisioterapia y demás terapias afines en cumplimiento de las normas vigentes.
