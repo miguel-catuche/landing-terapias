@@ -9,7 +9,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="relative w-full min-h-[100vh] px-6 md:pt-20 pt-10 pb-10 bg-[--color-bg]"
+            className="relative w-full min-h-[100vh] px-6 md:pt-20 pb-10 bg-[--color-bg]"
         >
 
             {/* Contenido principal */}

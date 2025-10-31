@@ -17,7 +17,7 @@ export default function FacilitySection() {
           }
         });
       },
-      { threshold: 0.9 }
+      { threshold: 0.7 }
     );
 
     if (videoRef.current) {
@@ -36,10 +36,10 @@ export default function FacilitySection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="relative w-full min-h-screen px-6 py-10 bg-[--color-bg] flex flex-col items-center justify-center"
+      className="relative w-full md:min-h-screen px-6 md:py-10 pb-12 pt-8 bg-[--color-bg] flex flex-col items-center justify-center"
     >
       <div className="relative z-10 w-full flex flex-col items-center">
-        <h2 className="text-4xl font-bold text-[--color-primary-title] drop-shadow-sm mb-12 text-center">
+        <h2 className="text-4xl font-bold text-[--color-primary-title] drop-shadow-sm md:mb-12 mb-8 text-center">
           Nuestra Instalación
         </h2>
 
