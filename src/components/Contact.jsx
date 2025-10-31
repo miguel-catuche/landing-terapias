@@ -66,7 +66,7 @@ export default function Contact() {
                                 href="https://m.facebook.com/itcpalmira/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="text-gray-400 hover:text-blue-500 transition hover:scale-105"
+                                className="text-[--color-subtext] hover:text-blue-500 transition hover:scale-105"
                                 aria-label="Facebook"
                             >
                                 <svg className="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -81,7 +81,7 @@ export default function Contact() {
                                 href="https://www.instagram.com/cterapeuticointegral"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="text-gray-400 hover:text-pink-500 transition hover:scale-105"
+                                className="text-[--color-subtext] hover:text-pink-500 transition hover:scale-105"
                                 aria-label="Instagram"
                             >
                                 <svg className="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -96,7 +96,7 @@ export default function Contact() {
                                 href="https://api.whatsapp.com/send?phone=573137169950&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="text-gray-400 hover:text-green-500 transition hover:scale-105"
+                                className="text-[--color-subtext] hover:text-green-500 transition hover:scale-105"
                                 aria-label="WhatsApp"
                             >
                                 <svg className="h-10 w-10" fill="currentColor" viewBox="0 0 448 512" aria-hidden="true">

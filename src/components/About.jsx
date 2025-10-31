@@ -30,7 +30,7 @@ export default function About() {
           <p className="text-lg leading-relaxed text-[--color-text]">
             Estamos <strong>habilitados oficialmente</strong> por el <strong>Ministerio de Salud y Protección Social</strong>, bajo el grupo de servicio 
             <em> Apoyo Diagnóstico y Complementación Terapéutica</em>, modalidad <strong>739 - Fisioterapia</strong>. 
-            Nuestro <strong>Distintivo de Habilitación de Servicios</strong> es <strong>BHZZ0824782</strong>, garantizando el cumplimiento de los estándares de calidad exigidos para los servicios de salud en Colombia.
+            Nuestro <strong>Distintivo de Habilitación de Servicios</strong> es <strong>DHSS0134802</strong>, garantizando el cumplimiento de los estándares de calidad exigidos para los servicios de salud en Colombia.
           </p>
         </div>
 

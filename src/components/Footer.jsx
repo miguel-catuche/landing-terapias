@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+const year = new Date();
+
 export default function Footer() {
     return (
         <motion.footer
@@ -68,7 +70,7 @@ export default function Footer() {
                 {/* Sección inferior */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-6 text-center md:text-left">
                     <p className="text-xs text-gray-500">
-                        © 2025 Centro Terapéutico Integral María del Pilar Tamayo. Todos los derechos reservados.
+                        © {year.getFullYear()} Centro Terapéutico Integral María del Pilar Tamayo. Todos los derechos reservados.
                     </p>
 
                     <div className="flex gap-6 justify-center md:justify-end">
