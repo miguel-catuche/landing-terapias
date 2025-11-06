@@ -25,9 +25,9 @@ export default function HeroSection() {
 
       {/* Contenido principal centrado */}
       <div className="relative z-10 w-full max-w-[900px] px-6 md:pt-32 pt-10 md:pb-0 pb-10 text-center text-[--color-primary-hero] space-y-8">
-        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg text-[] ">
           Centro Terapéutico Integral <br /> María Del Pilar Tamayo
-        </h2>
+        </h1>
 
         <p className="text-xl md:text-2xl italic font-light text-[--color-sub-hero] max-w-2xl mx-auto">
           “Cada sesión, un paso hacia tu mejor versión.”
@@ -38,6 +38,7 @@ export default function HeroSection() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-10 py-4 rounded-lg bg-[--color-bg-button] text-[--color-text-button] font-semibold text-lg shadow-lg hover:shadow-2xl hover:bg-[--color-bghover-button] hover:text-[--color-texthover-button] hover:scale-105 transition-all duration-300"
+          title="Contactar por WhatsApp"
         >
           Contáctanos
         </a>

@@ -51,7 +51,10 @@ export default function FacilitySection() {
             controls
             muted
             loop
+            title="Instalaciones del Centro Terapéutico Integral María del Pilar Tamayo"
+            aria-label="Video que muestra las instalaciones del Centro Terapéutico Integral en Palmira"
           />
+
         </div>
       </div>
     </motion.section>

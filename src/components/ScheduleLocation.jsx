@@ -56,10 +56,13 @@ export default function ScheduleLocation() {
               <p className="text-lg font-medium text-[--color-text]">
                 Cl. 34 #29-32, Palmira, Valle del Cauca
               </p>
+              <p className="text-center text-sm text-gray-600 mb-3">
+                Estamos ubicados en una zona central de Palmira, de fácil acceso para nuestros pacientes.
+              </p>
             </div>
             <div className="w-full h-[320px] rounded-lg overflow-hidden">
               <iframe
-                title="Ubicación institucional"
+                title="Ubicación del Centro Terapéutico Integral María del Pilar Tamayo en Palmira"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15928.970263956788!2d-76.29942822023983!3d3.531366192423686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a04e9284fa3f9%3A0x51bfbf2217bed566!2sCl.%2034%20%2329-32%2C%20Palmira%2C%20Valle%20del%20Cauca!5e0!3m2!1sen!2sco!4v1761176082052!5m2!1sen!2sco"
                 width="100%"
                 height="100%"

@@ -39,7 +39,7 @@ export default function About() {
           <div className="relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden shadow-lg">
             <img
               src="https://i.imgur.com/awI9NQN.jpeg"
-              alt="Centro Terapéutico Integral María Del Pilar Tamayo"
+              alt="Centro Terapéutico Integral María del Pilar Tamayo en Palmira, habilitado por el Ministerio de Salud de Colombia"
               className="w-full h-full object-cover rounded-xl"
             />
             <div className="caption-about">

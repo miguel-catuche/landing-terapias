@@ -1,4 +1,21 @@
-<!doctype html>
+import React from 'react'
+import ReactDOMServer from 'react-dom/server'
+import { escapeInject, dangerouslySkipEscape } from 'vike/server'
+import { PageShell } from './PageShell'
+
+export { render }
+
+async function render(pageContext) {
+  const { Page, pageProps } = pageContext
+
+  const pageHtml = ReactDOMServer.renderToString(
+    <PageShell pageContext={pageContext}>
+      <Page {...pageProps} />
+    </PageShell>
+  )
+
+  // Usa escapeInject de Vike (igual que antes)
+  const documentHtml = escapeInject`<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -17,8 +34,7 @@
     <title>Centro Terapéutico Integral María del Pilar Tamayo</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="root">${dangerouslySkipEscape(pageHtml)}</div>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -45,7 +61,8 @@
           "https://api.whatsapp.com/send?phone=573137169950"
         ]
       }
-</script>
-
+    </script>
   </body>
-</html>
+</html>`
+  return { documentHtml }
+}

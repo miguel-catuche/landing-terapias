@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const year = new Date();
+const year = new Date().getFullYear();
 
 export default function Footer() {
     return (
@@ -13,7 +13,10 @@ export default function Footer() {
             viewport={{ once: true }}
             className="w-full px-6 py-10 bg-gray-800 text-gray-300"
         >
-            <footer className="max-w-[1200px] mx-auto">
+            <footer
+                className="max-w-[1200px] mx-auto"
+                aria-label="Información institucional y de contacto"
+            >
                 {/* Sección superior */}
                 <div className="flex flex-col md:flex-row justify-between items-start gap-10 border-b border-gray-700 pb-8">
 
@@ -24,26 +27,45 @@ export default function Footer() {
                             María del Pilar Tamayo
                         </h2>
                         <p className="text-sm leading-relaxed text-gray-400">
-                            Espacio dedicado al bienestar físico y emocional. Atención personalizada con enfoque integral.
+                            Espacio dedicado al bienestar físico y emocional en Palmira.
+                            Atención personalizada en fisioterapia, rehabilitación y terapias
+                            complementarias avaladas por el Ministerio de Salud.
                         </p>
                     </div>
 
                     {/* Contacto */}
                     <div className="space-y-3 w-full md:w-1/4 text-center md:text-left">
-                        <h2 className="text-lg sm:text-xl font-semibold text-white">Contacto</h2>
+                        <h2 className="text-lg sm:text-xl font-semibold text-white">
+                            Contáctanos
+                        </h2>
                         <div>
                             <h3 className="text-sm font-medium text-blue-300">Teléfono</h3>
-                            <p className="text-sm text-gray-400">+57 3137169950</p>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=573137169950"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm text-gray-400 hover:text-green-400 transition"
+                                title="Contactar por WhatsApp"
+                            >
+                                +57 313 716 9950
+                            </a>
                         </div>
                         <div>
                             <h3 className="text-sm font-medium text-blue-300">Ubicación</h3>
-                            <p className="text-sm text-gray-400">Cl. 34 #29-32, Palmira, Valle del Cauca</p>
+                            <p className="text-sm text-gray-400">
+                                Cl. 34 #29-32, Palmira, Valle del Cauca, Colombia
+                            </p>
                         </div>
+                        <p className="text-sm mt-2 text-gray-400">
+                            Horario de atención: Lunes a Viernes 7:00 a.m. - 11:00 a.m. / 2:00 p.m. - 6:00 p.m.
+                        </p>
                     </div>
 
                     {/* Servicios */}
                     <div className="space-y-3 w-full md:w-1/4 text-center md:text-left">
-                        <h2 className="text-lg sm:text-xl font-semibold text-white">Servicios</h2>
+                        <h2 className="text-lg sm:text-xl font-semibold text-white">
+                            Servicios
+                        </h2>
                         <ul className="text-sm text-left text-gray-400 space-y-1 list-disc list-inside inline-block md:block">
                             <li>Terapia Física</li>
                             <li>Terapia Vestibular</li>
@@ -54,25 +76,29 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Distinción Ministerio de Salud */}
-                    <div className="w-full md:w-1/4 text-center md:text-left 
-                border-t border-gray-700 md:border-0 rounded-none md:pt-0 pt-4 transition-colors duration-300">
+                    {/* Distinción Ministerio */}
+                    <div className="w-full md:w-1/4 text-center md:text-left border-t border-gray-700 md:border-0 rounded-none md:pt-0 pt-4">
                         <p className="text-xs text-gray-400 leading-relaxed">
-                            El <span className="text-gray-200 font-medium">Centro Terapéutico Integral María del Pilar Tamayo </span>
-                            se encuentra <span className="text-gray-200 font-medium">debidamente autorizado por el
-                                Ministerio de Salud y Protección Social de Colombia</span> para ejercer el servicio de
-                            fisioterapia y demás terapias afines en cumplimiento de las normas vigentes.
+                            El <span className="text-gray-200 font-medium">
+                                Centro Terapéutico Integral María del Pilar Tamayo
+                            </span>{" "}
+                            se encuentra <span className="text-gray-200 font-medium">
+                                habilitado por el Ministerio de Salud y Protección Social de Colombia
+                            </span>{" "}
+                            para ofrecer servicios de fisioterapia, rehabilitación y terapias complementarias
+                            según la normativa vigente.
                         </p>
                     </div>
                 </div>
 
-
                 {/* Sección inferior */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-6 text-center md:text-left">
                     <p className="text-xs text-gray-500">
-                        © {year.getFullYear()} Centro Terapéutico Integral María del Pilar Tamayo. Todos los derechos reservados.
+                        © {year} Centro Terapéutico Integral María del Pilar Tamayo — Palmira, Valle del Cauca, Colombia.
+                        Todos los derechos reservados.
                     </p>
 
+                    {/* Redes Sociales */}
                     <div className="flex gap-6 justify-center md:justify-end">
                         <a
                             href="https://m.facebook.com/itcpalmira/"
