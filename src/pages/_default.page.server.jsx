@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { escapeInject, dangerouslySkipEscape } from 'vike/server'
-import { PageShell } from './PageShell'
+import { PageShell } from '../PageShell'
 
 export { render }
 
